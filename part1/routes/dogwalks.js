@@ -37,7 +37,6 @@ COUNT(wa.request_id) AS completed_walks FROM Users u
 JOIN WalkApplications wa ON u.user_id = wa.walker_id
 JOIN WalkRatings wr ON wa.request_id = wr.request_id AND wa.walker_id = wr.walker_id
 JOIN WalkRequests r ON wa.request_id = r.request_id AND r.status = 'completed'
-JOIN
 WHERE u.role = 'walker'
 
     `);
