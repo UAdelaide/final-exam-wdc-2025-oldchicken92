@@ -34,7 +34,7 @@ SELECT u.username,
 COUNT(wr.rating) AS total_ratings,
 AVG(wr.rating) AS average_rating,
 COUNT(wa.request_id) AS completed_walks FROM Users u
-JOIN WalkRatings
+JOIN WalkRatings wr 
 JOIN
 JOIN
 WHERE u.role = 'walker'
