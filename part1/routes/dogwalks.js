@@ -30,12 +30,11 @@ res.status(500).send('walkRequests open error');
 router.get('/walkers/summary', async (req, res) => {
     try {
  const [rows] = await db.query(`
-        SELECT d.name, d.size, u.username
-        FROM Dogs d Join Users u ON d.owner_id = u.user_id;
+
     `);
 res.json(rows);
     }catch(error){
-res.status(500).send('Dogs database error');
+res.status(500).send('walkers summary error');
     }
 });
 
