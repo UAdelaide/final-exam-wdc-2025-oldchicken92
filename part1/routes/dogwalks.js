@@ -27,7 +27,7 @@ res.status(500).send('walkRequests open error');
     }
 });
 
-router.get('/dogs', async (req, res) => {
+router.get('/walkers/summary', async (req, res) => {
     try {
  const [rows] = await db.query(`
         SELECT d.name, d.size, u.username
