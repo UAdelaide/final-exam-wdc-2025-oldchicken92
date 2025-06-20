@@ -44,11 +44,10 @@
                         .then(res =>res.json())
                         .then(data => {
                         this.dogOfDay = data.message;
-
-                    }
+                    });
                 }
 
-            },
+
         }).mount('#app');
     </script>
 </body>
