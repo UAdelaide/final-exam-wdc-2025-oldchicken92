@@ -10,7 +10,7 @@ router.get('/dogs', async (req, res) => {
     `);
 res.json(rows);
     }catch(error){
-res.status(500).send('')
+res.status(500).send('Dogs database error');
     }
 
 });
