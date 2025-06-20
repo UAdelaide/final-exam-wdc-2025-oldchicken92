@@ -30,7 +30,9 @@ res.status(500).send('walkRequests open error');
 router.get('/walkers/summary', async (req, res) => {
     try {
  const [rows] = await db.query(`
-SELECT u.username, COUNT(wr.rating) AS total_ratings,
+SELECT u.username,
+
+COUNT(wr.rating) AS total_ratings,
 AVG(wr.rating) AS average_rating,
 COUNT(wa.request_id) AS completed_walks
 
