@@ -36,8 +36,9 @@ AVG(wr.rating) AS average_rating,
 COUNT(wa.request_id) AS completed_walks FROM Users u
 LEFT JOIN WalkApplications wa ON u.user_id = wa.walker_id
 LEFT JOIN WalkRequests r ON wa.request_id = r.request_id AND r.status = 'completed'
+LEFT JOIN WalkRatings wr ON wa.request_id = wr.request_id AND wa.walker_id = wr.walker_id
 WHERE u.role = 'walker'
-
+GROUP BY 
     `);
 res.json(rows);
     }catch(error){
