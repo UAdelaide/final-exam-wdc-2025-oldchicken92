@@ -18,7 +18,7 @@ res.status(500).send('Dogs database error');
 router.get('/walkrequests/open', async (req, res) => {
     try {
  const [rows] = await db.query(`
-SELECT wr.request_id, wr.requested_time, d.name,
+SELECT wr.request_id, d.name, wr.requested_time,
     `);
 res.json(rows);
     }catch(error){
