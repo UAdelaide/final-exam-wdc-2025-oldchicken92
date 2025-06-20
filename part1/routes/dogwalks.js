@@ -15,15 +15,14 @@ res.status(500).send('Dogs database error');
 
 });
 
-router.get('/walk', async (req, res) => {
+router.get('/walkrequests/open', async (req, res) => {
     try {
  const [rows] = await db.query(`
-        SELECT d.name, d.size, u.username
-        FROM Dogs d Join Users u ON d.owner_id = u.user_id;
+
     `);
 res.json(rows);
     }catch(error){
-res.status(500).send('Dogs database error');
+res.status(500).send('walkRequests open error');
     }
 
 });
