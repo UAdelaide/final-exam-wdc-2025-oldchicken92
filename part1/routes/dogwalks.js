@@ -7,7 +7,7 @@ const [rows] = await db.query(`
     SELECT d.name, d.size, u.username,
     FROM Dogs d Join Users u ON d.owner_id = u.user_id;
     `);
-
+res.
 });
 
 
