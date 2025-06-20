@@ -58,10 +58,10 @@
                         .then(data => {
                         this.dogOfDay = data.message;
                         });
-                    }
+                    },
 
                     dogpictures() {
-                        fetch('https://dog.ceo/api/breeds/image/random')
+                        fetch('https://dog.ceo/api/breeds/image/random/3')
                         .then(res =>res.json())
                         .then(data => {
                         this.dogOfDay = data.message;
