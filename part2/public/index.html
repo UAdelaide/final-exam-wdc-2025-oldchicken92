@@ -35,8 +35,7 @@
     createApp({
       data() {
         return {
-          message: 'Welcome to the Dog Walking Service!',
-          login:{
+          message: 'Welcome to the Dog Walking Service!'
             username:'',
             password:''
           },
@@ -53,7 +52,7 @@
                 if (response.ok) {
                   window.location.href = data.user.role === 'owner' ? '/owner-dashboard.html' : 'walker-dashboard.html';
                 } else {
-                  
+
                 }
               }
           }
