@@ -28,7 +28,7 @@
         <form @submit.prevent="submitWalkRequest">
           <div class="mb-3">
             <label class="form-label">Select Your Dog</label>
-            <!--adding options for dogs-->
+            <!--adding options for dogs using vue-->
             <select v-model="form.dog_id" class="form-control" required>
               <option disabled value="">--Choose a dog--</option>
               <option v-for="dog in dogs" :value="dog.dog_id" :key="dog.dog_id">
