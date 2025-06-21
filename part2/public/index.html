@@ -26,10 +26,6 @@
       <!--Button to submit-->
       <button type="submit" id="login-button">Log In</button>
     </form>
-
-    <!--<a href="owner-dashboard.html" class="btn btn-outline-primary me-2">Owner Dashboard</a>
-    <a href="walker-dashboard.html" class="btn btn-outline-success">Walker Dashboard</a>
-  -->
     </div>
 
   <script>
@@ -46,6 +42,7 @@
 
       },
             methods: {
+              
                 async login() {
                   const response = await fetch('/api/users/login',{
                     method: 'POST',
