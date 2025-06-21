@@ -183,10 +183,12 @@ input {
     border: 2px solid red;
     border-radius: 0.4em;
     padding: 0.4em;
+    marg
 
 }
 
 .header-logout{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
