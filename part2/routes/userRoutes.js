@@ -87,6 +87,4 @@ res.clearCookie('connect.sid');
 res.send('Logged Out successfully'); // send message
 });
 
-
-
 module.exports = router;
