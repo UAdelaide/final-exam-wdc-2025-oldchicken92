@@ -60,6 +60,7 @@ router.post('/login', async (req, res) => {
       email: user.email,
       role: user.role
     };
+    
 
     // res.json({ message: 'Login successful', user: rows[0] });
   } catch (error) {
