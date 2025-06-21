@@ -182,10 +182,10 @@ input {
     background-color: white;
     border: 2px solid red;
     border-radius: 0.4em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
+    padding-left: 0.35em;
+    padding-right: 0.35em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     margin-bottom: 12px;
 
 }
