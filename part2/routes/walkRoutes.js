@@ -60,7 +60,7 @@ router.post('/:id/apply', async (req, res) => {
 });
 
 // GET ALL OWNERS DOGS
-router.get('/user-dogs', async (req, res) => {
+router.get('/dogs', async (req, res) => {
   const user = req.session.user;
   const [dogs] = await db.query(`
     SELECT name FROM Dogs WHERE owner_id = ?
