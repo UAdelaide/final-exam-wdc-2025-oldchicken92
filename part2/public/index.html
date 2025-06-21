@@ -56,7 +56,7 @@
                   if (response.ok) {
                     window.location.href = user_data.user.role === 'owner' ? '/owner-dashboard.html' : 'walker-dashboard.html';
                   } else {
-                    alert()
+                    alert('Login Attempt Failed, Invalid Credentials');
                   }
               }
           }
