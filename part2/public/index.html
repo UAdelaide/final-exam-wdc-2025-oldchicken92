@@ -51,9 +51,10 @@
                     body: JSON.stringify({ username: this.username, password: this.password })
                   });
 
-                  //stores user
+                  //stores user data from called login function
                   const user_data = await response.json();
                   if (response.ok) {
+                    //
                     window.location.href = user_data.user.role === 'owner' ? '/owner-dashboard.html' : 'walker-dashboard.html';
                   } else {
                     alert('Login Attempt Failed, Invalid Credentials');
