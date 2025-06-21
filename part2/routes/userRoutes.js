@@ -82,7 +82,9 @@ router.post('/logout', (req, res) => {
   // remove all session data
 req.session.destroy((err) => {
 });
-res.clearCookie('')
+// clear session cookie
+res.clearCookie('connect.sid');
+
 
 
 });
