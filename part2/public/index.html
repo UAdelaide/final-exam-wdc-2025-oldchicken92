@@ -41,20 +41,20 @@
           error: ''
 
         };
-          methods: {
-              async login() {
-                const response = await fetch('/users/login',{
-                  method: 'POST',
-                  headers: { 'content-Type' : 'application/json'},
-                  body: JSON.stringify({ username: this.username, password: this.password })
-                });
+            methods: {
+                async login() {
+                  const response = await fetch('/users/login',{
+                    method: 'POST',
+                    headers: { 'content-Type' : 'application/json'},
+                    body: JSON.stringify({ username: this.username, password: this.password })
+                  });
 
-                const user_data = await response.json();
-                if (response.ok) {
-                  window.location.href = data.user.role === 'owner' ? '/owner-dashboard.html' : 'walker-dashboard.html';
-                } else {
-                  this.error = 'Login Failed';
-                }
+                  const user_data = await response.json();
+                  if (response.ok) {
+                    window.location.href = data.user.role === 'owner' ? '/owner-dashboard.html' : 'walker-dashboard.html';
+                  } else {
+                    this.error = 'Login Failed';
+                  }
               }
           }
       }).mount('#app');
