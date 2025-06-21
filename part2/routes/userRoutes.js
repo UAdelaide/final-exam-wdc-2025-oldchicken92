@@ -62,7 +62,9 @@ router.post('/login', async (req, res) => {
     };
 
     res.json({
-      
+      user : {
+        
+      }
 
     });
 
