@@ -57,7 +57,7 @@
                     // checks to see if the user is an owner or a walker then directs the to appropriate page
                     window.location.href = user_data.user.role === 'owner' ? '/owner-dashboard.html' : 'walker-dashboard.html';
                   } else {
-                    //
+                    // gives alert if credentials are incorrect
                     alert('Login Attempt Failed, Invalid Credentials');
                   }
               }
