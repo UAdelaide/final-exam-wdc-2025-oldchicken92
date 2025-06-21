@@ -152,9 +152,10 @@ section {
     display: none;
 }
 
+.login
 
 
 
-.post .date
+.post .date{
     float: right;
 }
