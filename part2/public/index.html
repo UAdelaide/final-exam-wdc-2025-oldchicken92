@@ -49,7 +49,9 @@
                   body: JSON.stringify({ username: this.username, password: this.password })
                 });
 
-                const user_data
+                const user_data = await response.json();
+
+                
               }
           }
       }
