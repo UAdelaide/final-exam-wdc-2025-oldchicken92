@@ -160,7 +160,9 @@ section {
 
 }
 
-input 
+input {
+    border-radius: 10px;
+}
 
 
 .post .date{
