@@ -53,7 +53,7 @@
                 if (response.ok) {
                   window.location.href = data.user.role === 'owner' ? '/owner-dashboard.html' : 'walker-dashboard.html';
                 } else {
-
+                  this.error = 'Login Failed'
                 }
               }
           }
