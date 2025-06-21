@@ -60,6 +60,7 @@ router.post('/login', async (req, res) => {
       role: user.role
     };
 
+    // setting response object
     res.json({
       user: {
       user_id: user.user_id,
