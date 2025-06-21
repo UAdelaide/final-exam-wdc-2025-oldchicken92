@@ -14,8 +14,7 @@ app.use(session({
     secret: 'key',
     resave: 'false',
     saveUnitialized: false,
-    cookie: {maxAge: }
-
+    cookie: { maxAge: 60000 }
 }));
 
 // Routes
