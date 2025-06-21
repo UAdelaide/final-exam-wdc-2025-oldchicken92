@@ -84,8 +84,7 @@ req.session.destroy((err) => {
 });
 // clear session cookie
 res.clearCookie('connect.sid');
-res.send('Logged Out successfully');
-
+res.redirect('/');
 });
 
 
