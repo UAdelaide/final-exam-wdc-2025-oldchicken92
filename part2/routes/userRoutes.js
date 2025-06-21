@@ -36,7 +36,7 @@ router.get('/me', (req, res) => {
 });
 
 
-// POST login (dummy version)
+// POST login (updated version)
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
@@ -55,5 +55,8 @@ router.post('/login', async (req, res) => {
     res.status(500).json({ error: 'Login failed' });
   }
 });
+
+// session user get method
+
 
 module.exports = router;
