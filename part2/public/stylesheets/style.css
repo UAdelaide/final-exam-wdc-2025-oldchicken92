@@ -152,14 +152,9 @@ section {
     display: none;
 }
 
-.login{
-    background-color: #e04a4a;
-    padding: 1em;
-    width:500px;
-    margin:auto;
-
+input {
+    border-radius: ;
 }
-
 
 .post .date{
     float: right;
