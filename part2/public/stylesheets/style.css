@@ -69,10 +69,7 @@ footer h4 {
 .post h3 {
     font-weight: normal;
 }
-<!--
-.post .date
-    float: right;
-}
+
 
 .tag {
     background-color: rgb(225, 236, 244);
@@ -155,3 +152,9 @@ section {
     display: none;
 }
 
+
+
+
+.post .date
+    float: right;
+}
