@@ -80,9 +80,7 @@ router.post('/login', async (req, res) => {
 // logout method
 router.post('/logout', (req, res) => {
   // remove all session data
-req.session.destroy((err) => {
-
-});
+req.session.destroy
 
 
 });
