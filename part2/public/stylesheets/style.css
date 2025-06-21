@@ -154,7 +154,7 @@ section {
 
 input {
     border-radius: 8px;
-    width:200px;
+    width:100%;
 }
 
 .post .date{
