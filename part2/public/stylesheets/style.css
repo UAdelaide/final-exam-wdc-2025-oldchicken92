@@ -168,10 +168,10 @@ input {
 }
 
 #login-button{
-    background-color: rgb(34, 34, 238);
+    background-color: rgb(34, 105, 238);
     border: hidden;
     border-radius: 0.3em;
     padding: 0.3em;
-    margin: 0 0.2em;
+    margin: 0.2em;
     color: white;
 }
