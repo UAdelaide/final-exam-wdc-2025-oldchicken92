@@ -101,6 +101,8 @@
         async function logout() {
           // fetch logout function
           await fetch('/api/users/logout', { method: 'POST' });
+          // take user back to login page
+          window.location.href = '/';
         }
 
 
