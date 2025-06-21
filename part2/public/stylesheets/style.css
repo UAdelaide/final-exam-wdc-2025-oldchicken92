@@ -178,5 +178,6 @@ input {
 }
 
 #logout-button {
-    col
+    color:red;
+    background-color: white;
 }
