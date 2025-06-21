@@ -11,8 +11,8 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 // session data config
 app.use(session({
-    
-})
+
+}));
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
