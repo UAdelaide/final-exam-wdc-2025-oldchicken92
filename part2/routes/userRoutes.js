@@ -77,7 +77,6 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// session user get method
 
 
 
